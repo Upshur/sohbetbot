@@ -24,15 +24,15 @@ const bot = new Discord.Client();
 var oyun = [
 `✨ Hadi Sohbet Edelim :)`,
 `🚀 discord.gg/ydarkdays`,
-`❤ yDarKDayS Abone OL`,
-`🌟 Prefix | (dd+)`
+`❤ Evolve`,
+`🌟 Prefix | (v+)`
 ]
   
 client.on("ready", () => {
 setInterval(function() {
 
          var random = Math.floor(Math.random()*(oyun.length-0+1)+0);
-         client.user.setActivity(oyun[random], {"type": "WATCHING"});
+         client.user.setActivity(oyun[random], {"type": "STREAMING"});
 
         }, 2 * 5000);
 });
